@@ -53,7 +53,11 @@ export default function CartSidebar() {
           ) : (
             cart.map((item) => (
               <div key={item.id} className={styles.item}>
-                <div className={styles.itemThumb}>{item.emoji || "🧴"}</div>
+                <div className={styles.itemThumb}>
+                  {item.image
+                    ? <img src={item.image} alt={item.name} className={styles.itemImg} />
+                    : item.emoji || "🧴"}
+                </div>
                 <div className={styles.itemInfo}>
                   <p className={styles.itemName}>{item.name}</p>
                   <p className={styles.itemSize}>{item.size}</p>

@@ -22,3 +22,25 @@
   max-width: 1120px;
   margin: 0 auto;
 }
+
+@media (max-width: 480px) {
+  .section {
+    padding: 52px 4%;
+  }
+
+  .header {
+    margin-bottom: 36px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
