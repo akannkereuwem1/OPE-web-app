@@ -1,0 +1,35 @@
+.footer {
+  background: var(--black);
+  color: #666;
+  padding: 48px 6%;
+  text-align: center;
+}
+
+.brand {
+  font-family: var(--font-display);
+  color: var(--pink);
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.waLink {
+  color: var(--pink);
+  font-size: 13px;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+
+.waLink:hover {
+  opacity: 0.75;
+}
+
+.copy {
+  margin-top: 28px;
+  font-size: 12px;
+  color: #444;
+}
